@@ -1,0 +1,20 @@
+<h4>Agregar Pj</h4>
+<form (submit)="emitCharacter()" class="row">
+  <input
+    type="text"
+    placeholder="Nombre"
+    class="form-control mb-2"
+    [(ngModel)]="character.name"
+    name="name"
+  />
+  <input
+    type="number"
+    placeholder="Poder"
+    class="form-control mb-2"
+    [(ngModel)]="character.power"
+    name="power"
+  />
+  <button class="btn btn-primary" type="submit" >agregar</button>
+
+  <pre>{{character | json}}</pre>
+</form>
